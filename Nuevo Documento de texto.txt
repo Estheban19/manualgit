@@ -1,0 +1,58 @@
+*******	CERRAR SESION EN GITBASH
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+*******	ELIMINAR MAIN O MASTER:
+
+Por GitBash, 
+1.	Buscamos el Main o Master
+2.	Ejecutamos el comando:
+		
+		rm -rf .git
+
+*******	COMPROBAR CUENTA EN GITBASH
+
+	git config --list
+
+*******	ACTUALIZAR REPOSITORIO GITHUB
+
+	1. git add .
+	2. git commit -m "tu comentario"
+	3. git push
+
+*******	AÑADIR CAMBIOS A REPOSITORIO GITHUB DESDE OTRA PC
+
+0	Primero iniciamos sesión en Git por GitBash
+1	Seleccionamos donde queremos descargar el Repositorio de GitHub
+2	git clone https://github.com/AlexanderdpS/[nombre repositorio]
+3. 	cd (nos ubicamos )
+4. 	git add . 		->"para añadir todos los nuevos cambios"
+5. 	git commit -m 		->"Comentario a ...."
+6. 	git push 		->"para enviar al repositorio todos los cambios
+
+
+*******	ACTUALIZAR REPOSITORIO LOCAL POR GITBASH
+
+	Verificar si hay cambios en el repositorio de la nube GitHub:
+		git fetch
+
+	Descargar conformen los últimos cambios subidos en la nube GitHub:
+		git pull
+
+
+*******	Puntos Importantes
+1.- git clone (dirección de repositorio) ~ "clona el repo localmente"
+
+1.5 cd ....		~ "Me ubico en el directorio para subir y actualizar"
+
+2.- git status ~ "indica que archivos han cambiado"
+3.- git add (nombre de archivo) ~ "añadir archivo"
+4.- git diff ~ "mostrara las diferencias que hay en el archivo"
+5.- git add . ~ "añade todos los archivos que han tenido cambios"
+6.- git commit -m ~ "git commit guardará todos los cambio hechos en la zona de montaje o área de preparación (staging area), junto con una breve descripción del usuario, en un "commit" al repositorio local. (el -m agrega comentarios)"
+7.- git push ~ sube todo al repo en GitHub
+
+******* CLONACION DE UN REPOSITORIO
+
+1. git clone link del respositorio
